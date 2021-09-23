@@ -51,6 +51,9 @@ $routes->get('/about', function () {
     echo view('v_about');
     echo view('layout/footer');
 });
+$routes->get('/dashboard', function () {
+    return view('v_dashboard');
+});
 
 /*
  * --------------------------------------------------------------------
