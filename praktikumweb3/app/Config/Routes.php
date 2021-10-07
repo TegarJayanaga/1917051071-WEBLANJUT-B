@@ -54,6 +54,8 @@ $routes->get('/about', function () {
 $routes->get('/dashboard', function () {
     return view('v_dashboard');
 });
+$routes->get('/register', 'Templating::register');
+$routes->post('/saveRegister', 'Templating::saveRegister');
 
 /*
  * --------------------------------------------------------------------
