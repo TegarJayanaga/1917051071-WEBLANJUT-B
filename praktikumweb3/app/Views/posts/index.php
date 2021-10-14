@@ -174,7 +174,7 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="/dashboard" class="nav-link">
+                            <a href="/admin" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -182,7 +182,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/dashboard/posts" class="nav-link">
+                            <a href="/admin/posts" class="nav-link">
                                 <i class="nav-icon fas fa-book-open"></i>
                                 <p>
                                     My Post
@@ -200,10 +200,10 @@
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <div class="content-header">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Dashboard</h1>
+                            <h1 class="m-0">My Posts</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -215,23 +215,15 @@
                 </div><!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
-            <!-- tambah kata kk nya disini -->
-            <!-- /.card-header -->
-            <div class="card-body pt-0">
-                <!--The calendar -->
-                <div id="calendar" style="width: 100%"></div>
+            <div class="container">
+                <a href="/admin/posts/create" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Data</a>
             </div>
-            <!-- /.card-body -->
         </div>
         <!-- /.card -->
         </section>
         <!-- right col -->
     </div>
-    <!-- /.row (main row) -->
-    </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-    </div>
+
     <!-- /.content-wrapper -->
     <footer class="main-footer">
         <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>

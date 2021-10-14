@@ -40,7 +40,7 @@ $routes->get('/', function () {
     echo view('v_home');
     echo view('layout/footer');
 });
-$routes->get('/admin', 'Templating::index');
+
 $routes->get('/post', 'PostController::index');
 $routes->get('/about', function () {
     $data = [
@@ -51,11 +51,13 @@ $routes->get('/about', function () {
     echo view('v_about');
     echo view('layout/footer');
 });
-$routes->get('/dashboard', function () {
-    return view('v_dashboard');
-});
 $routes->get('/register', 'Templating::register');
 $routes->post('/saveRegister', 'Templating::saveRegister');
+
+$routes->get('/admin', 'Templating::index');
+$routes->get('/admin/posts', 'AdminPostsController::index');
+$routes->get('/admin/posts/create', 'AdminPostsController::create');
+$routes->get('/admin/posts/store', 'AdminPostsController::store');
 
 /*
  * --------------------------------------------------------------------
