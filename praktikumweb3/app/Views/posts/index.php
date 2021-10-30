@@ -243,8 +243,8 @@
                                             <td><?= $post['author'] ?></td>
                                             <td><?= $post['kategori'] ?></td>
                                             <td>
-                                                <a href="/admin/posts/edit<?= $post['slug'] ?>" class="btn btn-sm btn-warning me-1"><i class="fa fa-edit"></i>Edit</a>
-                                                <a href="/admin/posts/delete<?= $post['slug'] ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i>Delete</a>
+                                                <a href="/admin/posts/edit/<?= $post['slug'] ?>" class="btn btn-sm btn-warning me-1"><i class="fa fa-edit"></i>Edit</a>
+                                                <a href="/admin/posts/delete/<?= $post['post_id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin?');"><i class="fa fa-trash"></i>Delete</a>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
